@@ -387,8 +387,6 @@ def calculate_base_shear_distribution(period):
     return weight_height_numerator 
 
 def calculate_lateral_distribution_coefficient(period,shear):
-    #weigh_h_dict = calculate_base_shear_distribution()
-    #print(sum(weigh_h_dict.values()))
     values = weigh_h_dict.values()
     keys = weigh_h_dict.keys()
     lateral_coef_dict = { k:v/(sum(weigh_h_dict.values())) for (k,v) in zip(keys, values)}
