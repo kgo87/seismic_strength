@@ -25,3 +25,8 @@ python earthquake.py start
 ```
 
 Your application will be running in your CLI.
+
+# Contact details<a name="contact"></a>
+If you have any questions, contact me via email: 
+
+<a href="mailto:kathy.gomozova@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
