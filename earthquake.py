@@ -427,13 +427,11 @@ def calculate_ll_roof():
         r2 = 0.6
     else:
         r2 = 1.2 - 0.05*slope_roof
-    ll_force_r = (r1*r2*live_loads_roof*(bay_width**2))/1000
-    return ll_force_r
+    return  (r1*r2*live_loads_roof*(bay_width**2))/1000
 
 
 def base_shear():
-    shear_value = total_load * seismic response coefficient
-    return shear_value
+    return total_load * seismic response coefficient
 
 
 if __name__ == "__main__":
