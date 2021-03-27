@@ -6,6 +6,13 @@ The tool is interactive and require multiple user inputs.
 The code was developed in 2018 to automate calculations for a variety of different buildings.
 The program is limited to a conventional (rectangular-shaped) buildings.
 
+### Dependencies
+ - python
+ - numpy
+ - urllib.parse
+ - requests
+ - matplotlib and matplotlib.pyplot
+
 ### Running Locally
 
 * Install [Python](https://www.python.org/downloads/)
