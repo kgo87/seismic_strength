@@ -21,9 +21,9 @@ def main():
     list_of_acceleration_values = acceleration_values(sd1,sds,list_of_period_values)
     seismic_response_map = plot_response_spectrum(list_of_period_values,list_of_acceleration_values )
     
-    building_length = float(input("Enter length of the building in feet "))
+    building_length = float(input("Enter the structure's length in feet "))
     # add a note, what is defined as length
-    building_width = float(input("Enter width of the building in feet "))
+    building_width = float(input("Enter the structure's width in feet "))
     bay_width = float(input("Enter width of the bay in feet "))
     number_of_storeys = int(input("Enter number of storeys "))
     height_of_storeys = float(input("Enter height of the storey "))
@@ -35,8 +35,8 @@ def main():
     live_loads = int(input("Enter the LL value (per floor) in psf "))
     live_loads_roof = int(input("Enter the LL_r(roof) value (per floor) in psf "))
     moment_frame = int(input("Choose the type of moment-resisting frame (1 - steel, 2 - concrete, 3 - eccentrically braced, 4 - other structural system"))
-    r_coeff = int(input("Enter Response modification coefficient from the Table 12.2.1 of ASCE "))
-    importance = int(input("Enter Response Importance factor from the Table 1.5.2 of ASCE "))
+    r_coeff = int(input("Enter Response modification coefficient based on ASCE "))
+    importance = int(input("Enter Response Importance factor based on ASCE code "))
     distance_braces_eq = int(input("Enter distance between braces in EQ direction "))
     distance_non_eq = int(input("Enter distance between braces in non-EQ direction "))
     torsion_coeff = 0.05*building_length
